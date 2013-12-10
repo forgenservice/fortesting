@@ -10,9 +10,9 @@ public class Ser {
   public static void main(String[] args) {
     try {
       FileOutputStream fos = new FileOutputStream("SerializationToFile.hillel");
-      User userSer = new User();
+//      User userSer = new User();
 
-      SerializationUtils.serialize(User(), fos);
+      SerializationUtils.serialize("test", fos);
       fos.close();
 
       FileInputStream fis = new FileInputStream("SerializationToFile.hillel");
